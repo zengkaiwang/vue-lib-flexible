@@ -1,6 +1,7 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <!-- 设计稿是640px，有一个红色盒子宽高都是320px，里面的文字是28px，那么下面是这个例子的代码 -->
+  <div class="index-page">
+      <span class="title">我是标题</span>
   </div>
 </template>
 
@@ -11,21 +12,18 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  },
-  created () {
-    console.log(1111);
-    console.log(1111 * 12)
-  },
-  methods: {
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="less" scoped>
-  .hello {
-    h1 {
-      color: blue;
-    }
+<style scoped>
+  .index-page {
+    width: 320px;
+    height: 320px;
+    background: red
+  }
+  .title {
+    /* font-size: .28rem; */
   }
 </style>
