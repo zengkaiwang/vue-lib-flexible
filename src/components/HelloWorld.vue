@@ -24,6 +24,6 @@ export default {
     background: red
   }
   .title {
-    /* font-size: .28rem; */
+    font-size: 30px;
   }
 </style>

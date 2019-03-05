@@ -3,7 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import 'lib-flexible/flexible'
+// import 'lib-flexible/flexible'
+
+window.onresize = setHtmlFontSize
+function setHtmlFontSize () {
+  const htmlWidth = document.documentElement.clientWidth || document.body.clientWidth
+  const htmlDom = document.getElementsByTagName('html')[0]
+  htmlDom.style.fontSize = htmlWidth / 10 + 'px'
+}
+setHtmlFontSize()
 
 Vue.config.productionTip = false
 
