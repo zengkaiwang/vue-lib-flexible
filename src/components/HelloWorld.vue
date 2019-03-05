@@ -11,6 +11,12 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created () {
+    console.log(1111);
+    console.log(1111 * 12)
+  },
+  methods: {
   }
 }
 </script>
